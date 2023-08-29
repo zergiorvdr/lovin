@@ -1,7 +1,5 @@
-import os
+import os Utils
 import logging
-from dotenv import load_dotenv
-from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import Updater, Filters,  CommandHandler, MessageHandler,  CallbackContext, CallbackQueryHandler
 from bot_helpers import start_command, generate_command, cancel_command
 from otp_helpers import generate_otp, validate_otp_format, validate_otp
